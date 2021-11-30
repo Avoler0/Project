@@ -8,7 +8,8 @@
   <!-- BOX ICON CDN -->
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-  <title>페이지</title>
+  <title>메모장</title>
+  <!-- 텍스트 파일로 저장해서 , 불러올때도 텍스트로 불러와서 넣기-->
 </head>
 <body>
   <header>
@@ -27,12 +28,29 @@
     </nav>
   </header>
   <main id="home-main">
-    My Page
-    
+    <div class="leftList">
+      <ul class="NoteBar">
+        <li class="list-plus">
+          <a href="#" onclick="ClickPlusNote(this);">
+          <i class='bx bx-list-plus' ></i>
+          <span>새 메모 쓰기</span>
+        </a>
+      </li>
+        <li class="myNote">
+          나의 메모
+        </li>
+      </ul>
+    </div>
+    <div class="noteField">
+      <a href="#" class="SaveIcon"><i class='bx bxs-save' ></i></a>
+      <div class="EditNote" contenteditable="true">
+
+      </div>
+    </div>
   </main>
   <footer>
 <a href="#"></a>
   </footer>
-  <script src="script.js"></script>
+  <script src="NoteScript.js"></script>
 </body>
 </html>
