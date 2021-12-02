@@ -10,7 +10,7 @@
 
   <title>페이지</title>
 </head>
-<body>
+<body onload="init()">
   <header>
     <a href="index.html" class="logo-home">Home</a>
     <nav class="nav">
@@ -32,10 +32,12 @@
   </header>
   <main id="home-main">
     
-    <form>
+    <form onsubmit="return false;">
       <h1>나의 할 일</h1>
-      <input class="todoText"type="text" placeholder="오늘의 할일은?"/>
-      <input class="OkBtn" type="button" value="확인"/>
+      <div class="timer">&nbsp;</div>
+      <input class="todoText"type="text" placeholder="오늘의 할일은?"/ onkeydown="KeyEvent(event)">
+      <!--<input class="OkBtn" type="button" value="확인"/>-->
+      <input type="button" name="" id="" value="전체삭제" onclick="RemoveLocal()">
         <ul class = "TodoList">
 
         </ul>
@@ -45,6 +47,8 @@
   <footer>
 
   </footer>
-  <script src="TodoScript.js"></script>
+  <script src="TodoScript.js">
+    
+  </script>
 </body>
 </html>
