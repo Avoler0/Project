@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="NoteStyle.css">
   <!-- BOX ICON CDN -->
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
@@ -30,22 +31,27 @@
   <main id="home-main">
     <div class="leftList">
       <ul class="NoteBar">
-        <li class="list-plus">
-          <a href="#" onclick="ClickPlusNote(this);">
-          <i class='bx bx-list-plus' ></i>
-          <span>새 메모 쓰기</span>
+        <li class="NewNote">
+          <a href="#" onclick="ClickPlusNote();">
+          <span>+ Note</span>
         </a>
       </li>
         <li class="myNote">
-          나의 메모
+          <span class="myNoteFile">MyNoteFile</span>
         </li>
       </ul>
     </div>
     <div class="noteField">
-      <a href="#" class="SaveIcon"><i class='bx bxs-save' ></i></a>
-      <div class="EditNote" contenteditable="true">
+      <!--<a href="#" class="SaveIcon"><i class='bx bxs-save' ></i></a>-->
+      <!--<div class="EditNote" contenteditable="true">
 
       </div>
+      
+      <div class="SaveNote">
+        
+      </div>
+    <Button class="SaveBtn">버튼</Button>-->
+      
     </div>
   </main>
   <footer>

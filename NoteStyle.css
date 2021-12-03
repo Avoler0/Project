@@ -1,0 +1,89 @@
+.leftList{
+  position: absolute;
+  width: 200px;
+  height: 700px;
+  border-right: solid 1px black;
+
+}
+.NoteBar .NewNote{
+  font-size: 35px;
+  border-bottom: solid 1px #0047AB;
+}
+.NoteBar .NewNote a{
+  padding-left: 80px;
+  text-decoration: none;
+}
+.NoteBar .myNote{
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 200px;
+  height: 45px;
+}
+.myNoteFile{
+  font-size: 25px;
+  text-align: center;
+}
+.noteField{
+  position: relative;
+  left: 200px;
+  width: 100%;
+  height: 700px;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  background: #f2f4f7;
+  opacity: 0.4;
+}
+.NoteBar{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.NoteBar .list-plus{
+  width: 100%;
+  padding: 0px;
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  border-bottom: solid 1px bule;
+}
+.NoteBar .list-plus a{
+  padding: 5px;
+  text-decoration: none;
+  float: left;
+}
+.NoteBar .list-plus a:active{
+  color: rgba(47,138,241,0.3);
+  transition: all 0s ease-in;
+}
+.EditNote{ /* 새 메모장 */
+  position: relative;
+  border-radius: 10px;
+  top: 150px;
+  left: 30px;
+  background: #0047AB;
+  width: 500px;
+  height: 500px;
+}
+.SaveIcon{
+  float: left;
+  font-size: 25px;
+}
+.SaveNote{
+  position: relative;
+  display: inline-block;
+  border: solid 1px black;
+  left: 100px;
+  top: -550px;
+  width: 300px;
+  height: 200px;
+}
+.SaveBtn{
+  position: relative;
+  display: inline-block;
+  content: '버튼';
+  left: -400px;
+  top: -550px;
+}
